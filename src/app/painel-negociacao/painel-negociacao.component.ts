@@ -14,7 +14,9 @@ export class PainelNegociacaoComponent implements OnInit {
 
   ngOnInit() {
     this.oportunidadeService.listar()
-      .subscribe(resposta => this.oportunidades = <any> resposta);
+      .subscribe(resposta => {this.oportunidades = <any> resposta; console.log(resposta);});
+
+
   }
 
 }
