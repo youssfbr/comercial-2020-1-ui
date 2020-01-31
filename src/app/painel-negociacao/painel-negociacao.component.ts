@@ -8,11 +8,7 @@ import { OportunidadeService } from '../oportunidade.service';
 })
 export class PainelNegociacaoComponent implements OnInit {
 
-  oportunidades = []; // this.service.listar();
-  // [
-  //   { descricao: 'Projeto de dev', nomeProspecto: 'Ali Baba', valor: 50000 },
-  //   { descricao: 'Projeto de dev1', nomeProspecto: 'Ali Baba1', valor: 60000 }
-  // ];
+  oportunidades = [];
 
   constructor(private oportunidadeService: OportunidadeService ) { }
 
