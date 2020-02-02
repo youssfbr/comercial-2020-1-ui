@@ -16,7 +16,7 @@ export class OportunidadeService {
     return this.http.get<Oportunidade>(this.apiUrl);
   }
 
-  adicionar(oportunidade: Oportunidade) { // : Observable<Oportunidade>
+  adicionar(oportunidade: Oportunidade): Observable<Oportunidade> {
     return this.http.post<Oportunidade>(this.apiUrl, oportunidade);
   }
 
