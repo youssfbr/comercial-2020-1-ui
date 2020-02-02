@@ -1,3 +1,4 @@
+{{ oportunidade | json}}
 <p-panel header="Nova oportunidade">
   <div class="p-grid">
     <div class="p-col-2">Descrição</div>
@@ -17,8 +18,8 @@
       <input pInputText type="text" [(ngModel)]="oportunidade.valor" /></div>
   </div>
 
-  <div class="p-offset-2">
-    <button pButton type="submit" label="Adicionar"></button>
+  <div class="p-offset-2 p-col-10">
+    <button pButton type="submit" label="Adicionar" (click)="adicionar()"></button>
   </div>
 </p-panel>
 

@@ -26,4 +26,11 @@ export class PainelNegociacaoComponent implements OnInit {
     });
   }
 
+  adicionar() {
+    this.oportunidadeService.adicionar(this.oportunidade as Oportunidade).subscribe(() => {
+      this.oportunidade = {};
+      this.consultar();
+    });
+  }
+
 }
