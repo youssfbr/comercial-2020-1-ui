@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PainelNegociacaoComponent } from './painel-negociacao/painel-negociacao.component';
 
+import { TableModule } from 'primeng/table';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,9 @@ import { PainelNegociacaoComponent } from './painel-negociacao/painel-negociacao
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
