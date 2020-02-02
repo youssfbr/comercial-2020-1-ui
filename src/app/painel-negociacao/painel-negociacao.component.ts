@@ -9,6 +9,7 @@ import { OportunidadeService } from '../oportunidade.service';
 })
 export class PainelNegociacaoComponent implements OnInit {
 
+  oportunidade = {};
   oportunidades: Oportunidade[] = [];
 
   constructor(private oportunidadeService: OportunidadeService ) { }
