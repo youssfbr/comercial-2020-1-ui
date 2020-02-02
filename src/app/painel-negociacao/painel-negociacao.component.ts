@@ -15,12 +15,15 @@ export class PainelNegociacaoComponent implements OnInit {
   constructor(private oportunidadeService: OportunidadeService ) { }
 
   ngOnInit() {
+    this.consultar();
+  }
 
+  consultar() {
     this.oportunidadeService.listar()
       .subscribe(resposta => {
         this.oportunidades = resposta as any;
         console.log(resposta);
-      });
+    });
   }
 
 }
