@@ -20,5 +20,4 @@ export class OportunidadeService {
     return this.http.post<Oportunidade>(this.apiUrl, oportunidade);
   }
 
-
 }

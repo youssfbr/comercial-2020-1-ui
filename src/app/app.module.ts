@@ -13,6 +13,7 @@ import { PanelModule } from 'primeng/panel';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { ToastModule } from 'primeng/toast';
     ButtonModule,
     ToastModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
