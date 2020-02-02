@@ -1,3 +1,4 @@
+import { Oportunidade } from './../oportunidade';
 import { Component, OnInit } from '@angular/core';
 import { OportunidadeService } from '../oportunidade.service';
 
@@ -8,15 +9,17 @@ import { OportunidadeService } from '../oportunidade.service';
 })
 export class PainelNegociacaoComponent implements OnInit {
 
-  oportunidades = [];
+  oportunidades: Oportunidade[] = [];
 
   constructor(private oportunidadeService: OportunidadeService ) { }
 
   ngOnInit() {
+
     this.oportunidadeService.listar()
-      .subscribe(resposta => {this.oportunidades = <any> resposta; console.log(resposta);});
-
-
+      .subscribe(resposta => {
+        this.oportunidades = resposta as any;
+        console.log(resposta);
+      });
   }
 
 }
